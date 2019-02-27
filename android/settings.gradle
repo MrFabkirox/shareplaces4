@@ -1,0 +1,3 @@
+rootProject.name = 'shareplaces4'
+
+include ':app'
