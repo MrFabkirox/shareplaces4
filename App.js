@@ -15,6 +15,7 @@ import Component1 from './app/components/Component1/Component1'
 import Component2 from './app/components/Component2/Component2'
 import Component3 from './app/components/Component3/Component3'
 import Component4 from './app/components/Component4/Component4'
+import Component5 from './app/components/Component5/Component5'
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -40,19 +41,18 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.welcome}>Shareplaces4</Text>
 
-        <Text>Shareplaces4, here we go!</Text>
+        <Component5 />
+        <Component5 />
+        <Component4 />
+        <Component3 />
+        <Component2 />
+        <Component1 />
 
         <FetchLocation onGetLocation={this.getUserLocationHandler} />
 
-        <Component1 />
-        <Component2 />
-        <Component3 />
-        <Component4 />
-
+        <Text style={styles.instructions}>{instructions}</Text>
 
       </View>
     );

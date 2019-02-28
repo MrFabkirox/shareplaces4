@@ -13,13 +13,13 @@ export default class Component2 extends Component {
 
       <View style={styles.myView}>
 
-        <Text style={{ color: 'red' }}>Component2</Text>
+        <Text style={{ color: '#EFF1C5' }}>Component2</Text>
 
         <View style={styles.container}>
 
           <TouchableHighlight style={styles.v1} onPress={this.onPress}>
             <View>
-              <Text>View 1</Text>
+              <Text style={{ backgroundColor: '#E3E7AF' }}>Click Me</Text>
             </View>
           </TouchableHighlight>
 
@@ -40,10 +40,10 @@ export default class Component2 extends Component {
 }
 const styles = StyleSheet.create({
   myView: {
-    backgroundColor: 'blue'
+    backgroundColor: '#A2A77F'
   },
   container: {
-    backgroundColor: 'yellow',
+    backgroundColor: '#EFF1C5',
     flexDirection: 'row'
   }
 })
