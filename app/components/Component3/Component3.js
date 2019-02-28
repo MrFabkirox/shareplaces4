@@ -37,7 +37,7 @@ export default class Component3 extends Component {
         <Text>{this.state.textValue}</Text>
 
         <Switch
-          value={this.state.textValue}
+          value={this.state.switchValue}
           onValueChange={(value) => this.onSwitchChange(value)}
         />
 
